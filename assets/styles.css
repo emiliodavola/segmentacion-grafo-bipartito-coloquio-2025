@@ -1,0 +1,205 @@
+/* Estilos personalizados para la presentación */
+/* Configuración de fuentes más pequeñas para mejor legibilidad */
+
+.reveal {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: #222;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 15px 0;
+  color: #222;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: normal;
+  text-shadow: none;
+  word-wrap: break-word;
+}
+
+/* Títulos principales */
+.reveal h1 { 
+  font-size: 1.8em; 
+  margin-bottom: 20px;
+}
+
+/* Títulos de slide */
+.reveal h2 { 
+  font-size: 1.6em; 
+  margin-bottom: 15px;
+}
+
+/* Subtítulos */
+.reveal h3 { 
+  font-size: 1.4em; 
+  margin-bottom: 10px;
+}
+
+/* Subtítulos menores */
+.reveal h4 { 
+  font-size: 1.2em; 
+  margin-bottom: 8px;
+}
+
+/* Texto párrafos */
+.reveal p { 
+  font-size: 1.0em; 
+  line-height: 1.2; 
+  margin: 8px 0; 
+}
+
+/* Listas */
+.reveal ul li, 
+.reveal ol li { 
+  font-size: 0.8em; 
+  line-height: 1.2; 
+  margin: 3px 0; 
+}
+
+/* Listas anidadas */
+.reveal ul ul li,
+.reveal ol ol li {
+  font-size: 0.8em;
+  margin: 2px 0;
+}
+
+/* Configuración de columnas */
+.reveal .columns { 
+  display: flex; 
+  align-items: flex-start; 
+  gap: 15px; 
+}
+
+.reveal .column { 
+  flex: 1; 
+}
+
+/* Texto en negrita */
+.reveal strong { 
+  font-weight: bold; 
+  color: #1a237e; 
+}
+
+/* Imágenes */
+.reveal img { 
+  max-width: 100%; 
+  height: auto; 
+}
+
+/* Citas */
+.reveal blockquote { 
+  font-size: 0.55em; 
+  font-style: italic;
+  margin: 10px 0;
+  padding: 8px 15px;
+  border-left: 3px solid #1a237e;
+  background-color: #f8f9fa;
+}
+
+/* Código */
+.reveal code {
+  font-size: 0.6em;
+  background-color: #f1f3f4;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.reveal pre {
+  font-size: 0.55em;
+  line-height: 1.3;
+}
+
+/* Tablas */
+.reveal table {
+  font-size: 0.6em;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+.reveal table th,
+.reveal table td {
+  padding: 5px 8px;
+  border: 1px solid #ddd;
+}
+
+.reveal table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+/* Enlaces */
+.reveal a {
+  color: #1a237e;
+  text-decoration: none;
+}
+
+.reveal a:hover {
+  text-decoration: underline;
+}
+
+/* Slide number */
+.reveal .slide-number {
+  font-size: 0.5em;
+}
+
+/* Progress bar */
+.reveal .progress {
+  height: 3px;
+}
+
+/* Ajustes para iframe */
+.reveal iframe {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Ajustes para dispositivos pequeños */
+@media (max-width: 768px) {
+  .reveal {
+    font-size: 20px;
+  }
+  
+  .reveal h1 { font-size: 1.6em; }
+  .reveal h2 { font-size: 1.1em; }
+  .reveal h3 { font-size: 0.95em; }
+  .reveal h4 { font-size: 0.8em; }
+  .reveal p { font-size: 0.6em; }
+  .reveal ul li, .reveal ol li { font-size: 0.6em; }
+}
+
+/* Mejoras para la navegación */
+.reveal .controls {
+  color: #1a237e;
+}
+
+.reveal .controls .controls-arrow:hover {
+  color: #0d47a1;
+}
+
+/* Estilo para elementos destacados */
+.reveal .destacado {
+  background-color: #e3f2fd;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 4px solid #1a237e;
+  margin: 10px 0;
+}
+
+/* Estilo para métricas importantes */
+.reveal .metrica {
+  font-size: 0.7em;
+  font-weight: bold;
+  color: #1a237e;
+  background-color: #f8f9fa;
+  padding: 5px 10px;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 2px;
+}
