@@ -16,7 +16,7 @@ format:
     slide-number: true
     self-contained: true
     footer: "UNTreF"
-    css: styles.css
+    css: ../assets/styles.css
 jupyter: spotipy
 date: "2025-09-11"
 ---
@@ -274,7 +274,7 @@ def evaluate_node2vec_clustering(
 
 # Cargar datos
 try:
-    artistas_raw = pd.read_csv("data/artistas_buscados_por_genero_resultados.csv")
+    artistas_raw = pd.read_csv("../data/artistas_buscados_por_genero_resultados.csv")
     # Procesar géneros
     artistas_raw["generos_lista"] = artistas_raw["géneros"].apply(parse_lista_generos)
     artistas_explotado = artistas_raw.explode("generos_lista")
