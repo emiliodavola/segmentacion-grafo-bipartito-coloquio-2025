@@ -2,7 +2,7 @@
 title: "Segmentación de artistas musicales representados en grafos bipartitos"
 subtitle: "Comparación de técnicas para estratificación"
 author: 
-  - name: "Juan José Primosich"
+  - name: "Mgt. Juan José Primosich"
     email: "jprimosich@untref.edu.ar"
     affiliations:
     - "UNTreF"
@@ -15,7 +15,7 @@ format:
     theme: white
     slide-number: true
     self-contained: true
-    footer: "UNTreF"
+    footer: "UNTREF"
     css: ../assets/styles.css
 jupyter: spotipy
 date: "2025-09-11"
@@ -323,9 +323,9 @@ Proyecto de investigación (UNTreF): **Músicos y Fans en Plataformas Mediática
 
 > No existe un padrón o lista que los contenga a todos.  
 
-> La unidad de análisis final no es el artista musical sino la relación **[artista] - [red social] - [audiencia]**.  
-
 **Desafío**: Agrupar o segmentar artistas para seleccionarlos para muestreo estratificado en el proyecto de investigación para luego analizar sus interacciones con su audiencia en redes sociales.
+
+> La unidad de análisis final no es el artista musical sino la relación **[artista] - [red social] - [audiencia]**.  
 
 \
 
@@ -494,7 +494,7 @@ fig.show()
 
 ## Recap
 
-\
+::: {style="font-size: 1.6em; line-height: 1.4;"}
 
 - **Objetivo:** Segmentar artistas musicales para muestreo en proyecto de investigación.
 
@@ -505,6 +505,8 @@ fig.show()
 - **Grafo bipartito:** forma de almancenar información tolerante a valores faltantes, inconsistencias pero flexible.
 
 - **Layout Kamada-Kawai:** útil para visualización exploratoria, revela patrones espaciales pero no realiza análisis.
+
+:::
 
 ---
 
@@ -538,7 +540,7 @@ total_generos = len(artistas_transformado['genero'].unique())
 
 ::: {.column width="50%"}
 
-##### **API de Spotify**
+##### **Fuente de los datos**
 
 1. **Semilla:** Selección experta inicial
 2. **Expansión:** Artistas relacionados por géneros vía API Spotify
@@ -615,9 +617,10 @@ plt.show()
 
 ## Análisis
 
+::: {style="background-color: #e8f4f8; padding: 5px; border-radius: 2px; margin-bottom: 8px;"}
 :::: {.columns}
 
-::: {.column width="40%"}
+::: {.column width="50%"}
 #### **Spectral Clustering**
 
 - Proyección del grafo sobre artistas
@@ -626,7 +629,7 @@ plt.show()
 - **Fortaleza:** Artistas con perfil definido
 :::
 
-::: {.column width="60%"}
+::: {.column width="50%"}
 \
 
 - La técnica transforma la matriz de afinidad factorizandola en un espacio reducido mediante eigenvectores del Laplaciano y luego aplica clustering en ese espacio, ideal para matrices **sparse**.
@@ -634,7 +637,9 @@ plt.show()
 :::
 
 ::::
+:::
 
+::: {style="background-color: #e8f4f8; padding: 5px; border-radius: 2px; margin-bottom: 8px;"}
 :::: {.columns}
 
 ::: {.column width="50%"}
@@ -654,11 +659,11 @@ plt.show()
 :::
 
 ::::
-
-\
+:::
 
 ### Evaluación
 
+::: {style="background-color: #f0f8e8; padding: 5px; border-radius: 5px;"}
 :::: {.columns}
 
 ::: {.column width="50%"}
@@ -679,6 +684,7 @@ plt.show()
 :::
 
 ::::
+:::
 
 ---
 
@@ -1259,7 +1265,7 @@ fig.show()
 
 ::: {.column width="30%"}
 
-#### **Coincidencias entre métodos**
+### Coincidencias entre métodos
 
 ```{python}
 #| echo: false
@@ -1414,8 +1420,7 @@ plt.show()
 ::: {.column width="60%"}
 
 ::: {style="margin-top: 2em; text-align: center; font-size: 0.8em;"}
-
-**Juan José Primosich**  
+**Mgt. Juan José Primosich**  
 UNTreF  
 jprimosich@untref.edu.ar  
 
@@ -1424,6 +1429,13 @@ jprimosich@untref.edu.ar
 **Emilio Correa Dávola**  
 UNTreF  
 correa42609@estudiantes.untref.edu.ar
+
+\
+
+Otros miembros del equipo de trabajo
+
+- **Lic. Adriana Ramella**
+- **Emmanuel Sosa**
 :::
 
 :::
